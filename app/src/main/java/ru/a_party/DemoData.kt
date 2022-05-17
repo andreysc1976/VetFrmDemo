@@ -1,7 +1,5 @@
 package ru.a_party
 
-import kotlinx.parcelize.Parcelize
-import java.util.*
 
 class DemoData {
     val razdels = listOf(Pair(1,"Разел 1"),Pair(2,"Раздел 2"),Pair(3,"Разел 3"))
@@ -18,7 +16,7 @@ class DemoData {
     fun createDemoData(){
         for (fr in forumlas_list){
 
-            for (i in 1..(1..3).random()){
+            for (i in 1..(1..5).random()){
                 fr.params.add(Formula_param("Входной параметр формулы №-"+i.toString()))
             }
         }
